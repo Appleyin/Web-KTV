@@ -11,10 +11,10 @@ using System.Windows.Forms;
 namespace ktv前端
 {
 
-    public partial class Form1 : Form
+    public partial class FrmZhuchuangti : Form
     {
         int play = 1;//全局的播放为1  ，暂停0
-        public Form1()
+        public FrmZhuchuangti()
         {
             InitializeComponent();
             this.FormBorderStyle = FormBorderStyle.None;
@@ -26,8 +26,9 @@ namespace ktv前端
         /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.toolStripButton11.Margin = new System.Windows.Forms.Padding(60, 0, 0, 0);
-            
+            this.toolStripButton11.Margin = new System.Windows.Forms.Padding(250, 0, 10, 0);
+            lalShijian.Text = DateTime.Now.ToString("HH:mm:ss");
+          
         }
         /// <summary>
         /// 单击主菜单返回按钮退出单击事件
@@ -64,7 +65,30 @@ namespace ktv前端
         /// <param name="e"></param>
         private void toolStripButton15_Click(object sender, EventArgs e)
         {
+           axWindowsMediaPlayer1.Ctlcontrols.stop();
+          axWindowsMediaPlayer1.Ctlcontrols.play();
+        }
 
+
+
+
+        
+        /// <summary>
+        /// 时间控件事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lalNewshijian.Text = DateTime.Now.ToString("HH:mm:ss");
+
+
+
+        }
+
+        private void toolStripButton13_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("服务以呼出，请等待！","提示",MessageBoxButtons.OK);
         }
     }
 }

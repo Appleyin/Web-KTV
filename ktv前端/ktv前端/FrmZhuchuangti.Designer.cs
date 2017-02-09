@@ -1,6 +1,6 @@
 ﻿namespace ktv前端
 {
-    partial class Form1
+    partial class FrmZhuchuangti
     {
         /// <summary>
         /// 必需的设计器变量。
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmZhuchuangti));
             this.panel1 = new System.Windows.Forms.Panel();
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton11 = new System.Windows.Forms.ToolStripButton();
@@ -43,14 +43,14 @@
             this.toolStripButton19 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton20 = new System.Windows.Forms.ToolStripButton();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lalNewshijian = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lalShijian = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -67,9 +67,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.toolStrip2);
-            this.panel1.Location = new System.Drawing.Point(12, 515);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 611);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1085, 110);
+            this.panel1.Size = new System.Drawing.Size(1348, 110);
             this.panel1.TabIndex = 1;
             // 
             // toolStrip2
@@ -90,7 +91,7 @@
             this.toolStripButton20});
             this.toolStrip2.Location = new System.Drawing.Point(0, 21);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(1085, 89);
+            this.toolStrip2.Size = new System.Drawing.Size(1348, 89);
             this.toolStrip2.TabIndex = 0;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -123,6 +124,7 @@
             this.toolStripButton13.Name = "toolStripButton13";
             this.toolStripButton13.Size = new System.Drawing.Size(60, 86);
             this.toolStripButton13.Text = "toolStripButton13";
+            this.toolStripButton13.Click += new System.EventHandler(this.toolStripButton13_Click);
             // 
             // toolStripButton14
             // 
@@ -199,19 +201,97 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Transparent;
-            this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label4);
-            this.panel3.Controls.Add(this.label5);
-            this.panel3.Controls.Add(this.label3);
-            this.panel3.Controls.Add(this.textBox2);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Controls.Add(this.lalNewshijian);
+            this.panel3.Controls.Add(this.label7);
+            this.panel3.Controls.Add(this.lalShijian);
+            this.panel3.Controls.Add(this.label3);
+            this.panel3.Controls.Add(this.label6);
             this.panel3.Controls.Add(this.label1);
             this.panel3.Location = new System.Drawing.Point(9, 12);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1088, 88);
+            this.panel3.Size = new System.Drawing.Size(1324, 162);
             this.panel3.TabIndex = 3;
+            // 
+            // label4
+            // 
+            this.label4.Location = new System.Drawing.Point(596, 35);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(195, 23);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "label5";
+            // 
+            // label2
+            // 
+            this.label2.Location = new System.Drawing.Point(128, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(195, 23);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "label5";
+            // 
+            // lalNewshijian
+            // 
+            this.lalNewshijian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lalNewshijian.AutoSize = true;
+            this.lalNewshijian.Font = new System.Drawing.Font("隶书", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lalNewshijian.ForeColor = System.Drawing.Color.Magenta;
+            this.lalNewshijian.Location = new System.Drawing.Point(1198, 48);
+            this.lalNewshijian.Name = "lalNewshijian";
+            this.lalNewshijian.Size = new System.Drawing.Size(106, 24);
+            this.lalNewshijian.TabIndex = 4;
+            this.lalNewshijian.Text = "当前时间";
+            // 
+            // label7
+            // 
+            this.label7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("隶书", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label7.Location = new System.Drawing.Point(1198, 12);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(106, 24);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "当前时间";
+            // 
+            // lalShijian
+            // 
+            this.lalShijian.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lalShijian.AutoSize = true;
+            this.lalShijian.Font = new System.Drawing.Font("隶书", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.lalShijian.ForeColor = System.Drawing.Color.Blue;
+            this.lalShijian.Location = new System.Drawing.Point(1081, 48);
+            this.lalShijian.Name = "lalShijian";
+            this.lalShijian.Size = new System.Drawing.Size(106, 24);
+            this.lalShijian.TabIndex = 4;
+            this.lalShijian.Text = "开房时间";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("隶书", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label3.Location = new System.Drawing.Point(1081, 12);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(106, 24);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "开房时间";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("隶书", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label6.Location = new System.Drawing.Point(497, 29);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(82, 24);
+            this.label6.TabIndex = 2;
+            this.label6.Text = "下一首";
             // 
             // label1
             // 
@@ -224,82 +304,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "正在播放";
             // 
-            // textBox1
+            // timer1
             // 
-            this.textBox1.Location = new System.Drawing.Point(129, 16);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(133, 25);
-            this.textBox1.TabIndex = 1;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(414, 16);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(133, 25);
-            this.textBox2.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("隶书", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(301, 18);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 24);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "下一首";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("隶书", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(845, 12);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(106, 24);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "开房时间";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("隶书", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(962, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 24);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "当前时间";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("隶书", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label5.ForeColor = System.Drawing.Color.Blue;
-            this.label5.Location = new System.Drawing.Point(845, 48);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(106, 24);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "开房时间";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("隶书", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.label6.ForeColor = System.Drawing.Color.Magenta;
-            this.label6.Location = new System.Drawing.Point(962, 48);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 24);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "当前时间";
+            this.timer1.Enabled = true;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // panel2
             // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.panel4);
             this.panel2.Location = new System.Drawing.Point(29, 123);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1068, 386);
+            this.panel2.Size = new System.Drawing.Size(1304, 460);
             this.panel2.TabIndex = 4;
             // 
             // panel4
@@ -312,7 +331,9 @@
             // 
             // axWindowsMediaPlayer1
             // 
-            this.axWindowsMediaPlayer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.axWindowsMediaPlayer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.axWindowsMediaPlayer1.Enabled = true;
             this.axWindowsMediaPlayer1.Location = new System.Drawing.Point(0, 0);
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
@@ -320,19 +341,20 @@
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(688, 280);
             this.axWindowsMediaPlayer1.TabIndex = 0;
             // 
-            // Form1
+            // FrmZhuchuangti
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1112, 647);
+            this.ClientSize = new System.Drawing.Size(1348, 721);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
-            this.Name = "Form1";
+            this.Name = "FrmZhuchuangti";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -362,18 +384,18 @@
         private System.Windows.Forms.ToolStripButton toolStripButton19;
         private System.Windows.Forms.ToolStripButton toolStripButton20;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lalNewshijian;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lalShijian;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel4;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label4;
     }
 }
 
