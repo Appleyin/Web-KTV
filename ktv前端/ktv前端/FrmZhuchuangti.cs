@@ -26,7 +26,7 @@ namespace ktv前端
         /// <param name="e"></param>
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.toolStripButton11.Margin = new System.Windows.Forms.Padding(250, 0, 10, 0);
+            this.toolStripButton11.Margin = new System.Windows.Forms.Padding(50, 0, 10, 0);
             lalShijian.Text = DateTime.Now.ToString("HH:mm:ss");
           
         }
@@ -89,6 +89,16 @@ namespace ktv前端
         private void toolStripButton13_Click(object sender, EventArgs e)
         {
             MessageBox.Show("服务以呼出，请等待！","提示",MessageBoxButtons.OK);
+        }
+        /// <summary>
+        /// 点歌按钮单击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void toolStripButton11_Click(object sender, EventArgs e)
+        {
+            FrmSongSets Frm = new FrmSongSets();
+            Frm.Show();
         }
     }
 }
