@@ -118,28 +118,79 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="QQ图片20170210122054" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QQ图片20170210122054.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="timg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\timg.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QQ图片20170211083303" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QQ图片20170211083303.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QQ图片20170210122034" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QQ图片20170210122034.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="8e2c6857e1faa4b768743f68221f3a511" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8e2c6857e1faa4b768743f68221f3a511.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Adele" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Adele.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="陈奕迅" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\陈奕迅.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="张学友1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\张学友1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ooopic_1484895343" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ooopic_1484895343.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="QQ图片20170210122058" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\QQ图片20170210122058.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QQ图片20170210122023" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\QQ图片20170210122023.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="QQ图片20170210122034" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QQ图片20170210122034.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QQ图片20170210122054" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QQ图片20170210122054.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="QQ图片20170210122050" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QQ图片20170210122050.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="8e2c6857e1faa4b768743f68221f3a51" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\8e2c6857e1faa4b768743f68221f3a51.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QQ图片20170210122042" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\QQ图片20170210122042.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="QQ图片20170210122028" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\QQ图片20170210122028.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="timg1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\timg1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="QQ图片20170210122102" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\QQ图片20170210122102.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="张学友" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\张学友.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="林俊杰" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\林俊杰.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="43f900e999688f040e2676fc8a66a6b2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\43f900e999688f040e2676fc8a66a6b2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QQ图片20170210122028" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QQ图片20170210122028.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="QQ图片20170210122050" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\QQ图片20170210122050.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="张靓颖" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\张靓颖.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="43f900e999688f040e2676fc8a66a6b21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\43f900e999688f040e2676fc8a66a6b21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="田馥甄" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\田馥甄.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="庄心妍" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\庄心妍.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="timg2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\timg2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

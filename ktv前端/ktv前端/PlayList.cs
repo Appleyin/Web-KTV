@@ -3,174 +3,126 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static ktv前端.SongState;
 
 namespace ktv前端
 {
-    class PlayList
+  public   class PlayList
     {
-        public static int num = 0;
-        private static Song[] songList = new Song[50];
+        private static SongState[] songList = new SongState[100];
+        public static int SongIndex = 0;//当前播放的歌曲在数组中索引（已点列表）
 
-        public static Song[] SongList
+        internal static SongState[] SongList
         {
-            get { return PlayList.songList; }
-
-        }
-
-
-        private static int songIndex = 0;
-
-        public static int SongIndex
-        {
-            get { return PlayList.songIndex; }
-
-        }
-
-
-
-
-
-        //当前播放歌曲名称
-        public static String PlayingSongName()
-        {
-            string songName = "";
-
-
-            if (SongList[SongIndex] != null)
+            get
             {
-                songName = SongList[SongIndex].SongName;
+                return songList;
+            }
+            set
+            { songList = value;}
+        }
 
 
+
+        /// <summary>
+        /// 点一首歌，相当于歌曲放在数组中
+        /// </summary>
+        /// <param name="song"></param>
+        /// <returns></returns>
+        internal static bool AddSong(SongState song)
+        {
+            bool flag = false;
+            for (int i = 0;  i <SongList.Length;   i++)
+            {
+                if (SongList[i]==null)
+                {
+                    SongList[i] = song;
+                    flag = true;
+                    break;
+                }
             }
 
-
-
-            return songName;
-
+            return flag;
         }
-        // 当前播放的歌曲
-        public static Song GetPlayingSong()
-        {
-            if (SongList[songIndex] != null)
-            {
-                return SongList[songIndex];
 
+        /// <summary>
+        /// 获取当前播放的歌曲，既然是获取当前播放的歌曲，放回值肯定是Song类型 
+        /// </summary>
+        /// <returns></returns>
+        public static SongState GetPlaySong()
+        {
+            if (SongList[SongIndex] != null)
+            {
+                return SongList[SongIndex];
             }
             else
             {
                 return null;
-
             }
-
         }
-        //播放下一首歌曲
-        public static void GeiNextSong()
+        /// <summary>
+        /// 播放下一曲
+        /// </summary>
+        public static void Next()
         {
-
-            if (SongList[songIndex] != null)
+            if (SongList[SongIndex] != null && SongList[SongIndex].Playstar == SongPlayState.again)
             {
-                SongList[songIndex].SongPlay();
-
+                SongList[SongIndex].SongPlayed();
             }
             else
             {
-                songIndex++;
-            }
-
-        }
-        //下一首歌曲名称
-        public static string GetPlayingSongName()
-        {
-            string nextSongName = "";
-            if (SongList[SongIndex + 1] != null)
-            {
-                nextSongName = SongList[SongIndex + 1].SongName;
-
-
-            }
-            return nextSongName;
-
-
-
-        }
-        //点播一首歌曲
-        public static bool AddSong(Song song)
-        {
-            bool success = false;
-            for (int i = 0; i < SongList.Length; i++)
-            {
-                if (SongList[i] == null)
+                SongIndex++;
+                if (SongList[SongIndex] != null)
                 {
-                    SongList[i] = song;
-                    success = true;
-                    break;
-
-
+                    SongList[SongIndex].SongPlayed();
                 }
-
-
             }
-
-            return success;
-
-
         }
-        //重放当前歌曲
-        public static void PlayAgain()
+
+        /// <summary>
+        /// 下一首要播放的歌曲名称
+        /// </summary>
+        /// <returns></returns>
+        public static string NextSongName()
         {
-            if (SongList[songIndex] != null)
+            string songName = "";
+            if (SongList[0] != null && SongList[SongIndex + 1] == null)
             {
-                SongList[songIndex].SongAgain();
-
-
-            }
-
-        }
-        //切歌
-
-        public static void CutSong(int index)
-        {
-            if (GetPlayingSongName() != "")
-            {
-
-                num = 0;
-                int i;
-                if (index == -1)
-                {
-                    i = SongIndex;
-
-
-                }
-                else
-                {
-                    i = index;
-
-
-
-                }
-
-                while (SongList[i] != null)
-                {
-                    SongList[i] = SongList[i + 1];
-                    i++;
-                    if (i == SongList.Length)
-                    {
-                        SongList[i] = null;
-
-
-                    }
-
-                }
-
+                songName = "待添加";
             }
             else
             {
+                if (SongList[0]!=null)
+                {
+                    songName = SongList[SongIndex + 1].SongName;
+                    return songName;//返回下一首个的名称
+                }
+            }
 
-                num = 1;
+            return songName;
+        }
+        /// <summary>
+        /// 歌曲重播
+        /// </summary>
+        public static void PalyAgain()
+        {
+            if (SongList[SongIndex]!=null)
+            {
+                SongList[SongIndex].SongAgain();//获取重播的方法
 
             }
-            PlayList.GeiNextSong();
         }
-
+        /// <summary>
+        /// 切歌
+        /// </summary>
+        public void Cutsong()
+        {
+            //获取当前播放的歌曲改变播放状态
+            if (SongList[SongIndex]!=null)
+            {
+                SongList[SongIndex].Playstar = SongPlayState.cut;
+                SongIndex++;//改变过去取索引，播放下一曲
+            }
+        }
     }
 }

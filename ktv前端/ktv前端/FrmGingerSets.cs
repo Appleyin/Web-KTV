@@ -10,35 +10,39 @@ using System.Windows.Forms;
 
 namespace ktv前端
 {
-    public partial class FrmSongSets : Form
+    public partial class FrmGingerSets : Form
     {
-        public FrmSongSets()
+        public FrmGingerSets()
         {
             InitializeComponent();
         }
         /// <summary>
-        /// 金曲排行榜单击事件
+        /// 歌星点歌窗体加载事件
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void FrmGingerSets_Load(object sender, EventArgs e)
         {
-            FrmSongSequence frm = new FrmSongSequence();
-            frm.Show();
+
+        }
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
         /// <summary>
-        /// 歌星点歌
+        /// 单击男歌手
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void pictureBox7_Click(object sender, EventArgs e)
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void FrmSongSets_Load(object sender, EventArgs e)
-        {
-
+            FrmManSinger frm = new FrmManSinger();
+            frm.Show();
         }
     }
 }

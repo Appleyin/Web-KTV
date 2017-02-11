@@ -63,6 +63,66 @@ namespace ktv前端.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap _43f900e999688f040e2676fc8a66a6b2 {
+            get {
+                object obj = ResourceManager.GetObject("43f900e999688f040e2676fc8a66a6b2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _43f900e999688f040e2676fc8a66a6b21 {
+            get {
+                object obj = ResourceManager.GetObject("43f900e999688f040e2676fc8a66a6b21", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _8e2c6857e1faa4b768743f68221f3a51 {
+            get {
+                object obj = ResourceManager.GetObject("8e2c6857e1faa4b768743f68221f3a51", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap _8e2c6857e1faa4b768743f68221f3a511 {
+            get {
+                object obj = ResourceManager.GetObject("8e2c6857e1faa4b768743f68221f3a511", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap Adele {
+            get {
+                object obj = ResourceManager.GetObject("Adele", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap ooopic_1484895343 {
+            get {
+                object obj = ResourceManager.GetObject("ooopic_1484895343", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap QQ图片20170210122023 {
             get {
                 object obj = ResourceManager.GetObject("QQ图片20170210122023", resourceCulture);
@@ -136,6 +196,116 @@ namespace ktv前端.Properties {
         internal static System.Drawing.Bitmap QQ图片20170210122102 {
             get {
                 object obj = ResourceManager.GetObject("QQ图片20170210122102", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap QQ图片20170211083303 {
+            get {
+                object obj = ResourceManager.GetObject("QQ图片20170211083303", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap timg {
+            get {
+                object obj = ResourceManager.GetObject("timg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap timg1 {
+            get {
+                object obj = ResourceManager.GetObject("timg1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap timg2 {
+            get {
+                object obj = ResourceManager.GetObject("timg2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 庄心妍 {
+            get {
+                object obj = ResourceManager.GetObject("庄心妍", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 张学友 {
+            get {
+                object obj = ResourceManager.GetObject("张学友", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 张学友1 {
+            get {
+                object obj = ResourceManager.GetObject("张学友1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 张靓颖 {
+            get {
+                object obj = ResourceManager.GetObject("张靓颖", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 林俊杰 {
+            get {
+                object obj = ResourceManager.GetObject("林俊杰", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 田馥甄 {
+            get {
+                object obj = ResourceManager.GetObject("田馥甄", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 陈奕迅 {
+            get {
+                object obj = ResourceManager.GetObject("陈奕迅", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

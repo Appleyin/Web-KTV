@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 namespace ktv前端
 {
-    public partial class FrmSongSequence : Form
+    public partial class FrmManSinger : Form
     {
-        public FrmSongSequence()
+        public FrmManSinger()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace ktv前端
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void FrmSongSequence_Load(object sender, EventArgs e)
+        private void FrmManSinger_Load(object sender, EventArgs e)
         {
             #region DataGridVeiw Style
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -55,20 +55,88 @@ namespace ktv前端
             AddData();
         }
         /// <summary>
-        /// 绑定data数据
+        /// 绑定数据
         /// </summary>
         private void AddData()
         {
-            string sql = @"select s.song_name,sty.songtype_name,g.singer_name,song_play_count 
+            string sql = @"select s.song_id,s.song_name,sty.songtype_name,g.singer_name,song_play_count ,g.singer_sex,s.song_url
                                     from dbo.song_info  s,dbo.singer_info  g,dbo.song_type  sty 
-                                    where s.singer_id=s.singer_id and s.singer_id=g.singer_id and sty.songtype_id=s.songtype_id
+                                    where s.singer_id=s.singer_id and s.singer_id=g.singer_id and sty.songtype_id=s.songtype_id and g.singer_sex='男'
                                     ";
-            sda = new SqlDataAdapter(sql,DBHelper.Connection);
+            sda = new SqlDataAdapter(sql, DBHelper.Connection);
             ds = new DataSet();
             sda.Fill(ds,"data");
             DataGridView1.DataSource = ds.Tables["data"];
+
+
+        }
+        /// <summary>
+        /// 点击查询按钮单击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (kong())
+            {
+                showhca();
+            }
+        }
+        /// <summary>
+        /// 显示查询
+        /// </summary>
+        private void showhca()
+        {
+            string name = textBox1.Text;
+            dv = new DataView(ds.Tables["data"]);
+            dv.RowFilter = string.Format("singer_name like'%{0}%'", name);
+            DataGridView1.DataSource = dv;
         }
 
+        /// <summary>
+        /// 判断非空
+        /// </summary>
+        /// <returns></returns>
+        private bool kong()
+        {
+            bool flag = true;
+            if (textBox1.Text.Trim().Equals(string.Empty))
+            {
+                flag = false;
+            }
+            return flag;
+        }
+        SongState song = new SongState();
         
+        /// <summary>
+        /// 双击事件
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void DataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            song.SongName = DataGridView1.SelectedRows[0].Cells["song_name"].Value.ToString();
+            song.SongUrl1= DataGridView1.SelectedRows[0].Cells["song_url"].Value.ToString();
+            PlayList.AddSong(song);
+            string sql = string.Format("update dbo.song_info set song_play_count=song_play_count+1 where  song_name='{0}'",DataGridView1.SelectedRows[0].Cells["song_name"].Value.ToString());
+            SqlCommand cmd = new SqlCommand(sql,DBHelper.Connection);
+            try
+            {
+                DBHelper.OpenConnection();
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("已添加到播放列表","提示");
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                DBHelper.ClosedConnection();
+            }
+
+
+        }
     }
 }

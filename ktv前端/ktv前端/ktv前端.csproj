@@ -47,6 +47,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBHelper.cs" />
+    <Compile Include="FrmGingerSets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGingerSets.Designer.cs">
+      <DependentUpon>FrmGingerSets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmManSinger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmManSinger.Designer.cs">
+      <DependentUpon>FrmManSinger.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSongSequence.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +71,12 @@
     <Compile Include="FrmSongSets.Designer.cs">
       <DependentUpon>FrmSongSets.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmYiDian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmYiDian.Designer.cs">
+      <DependentUpon>FrmYiDian.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmZhuchuangti.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,12 +86,21 @@
     <Compile Include="PlayList.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Song.cs" />
+    <Compile Include="SongState.cs" />
+    <EmbeddedResource Include="FrmGingerSets.resx">
+      <DependentUpon>FrmGingerSets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmManSinger.resx">
+      <DependentUpon>FrmManSinger.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmSongSequence.resx">
       <DependentUpon>FrmSongSequence.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSongSets.resx">
       <DependentUpon>FrmSongSets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmYiDian.resx">
+      <DependentUpon>FrmYiDian.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmZhuchuangti.resx">
       <DependentUpon>FrmZhuchuangti.cs</DependentUpon>
@@ -143,6 +170,57 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\QQ图片20170210122102.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\QQ图片20170211083303.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ooopic_1484895343.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\张学友.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\张学友1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\林俊杰.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\庄心妍.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\张靓颖.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\田馥甄.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\陈奕迅.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Adele.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timg1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43f900e999688f040e2676fc8a66a6b2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\43f900e999688f040e2676fc8a66a6b21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8e2c6857e1faa4b768743f68221f3a51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8e2c6857e1faa4b768743f68221f3a511.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\timg2.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

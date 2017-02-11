@@ -153,6 +153,7 @@
             this.pictureBox7.Size = new System.Drawing.Size(375, 177);
             this.pictureBox7.TabIndex = 1;
             this.pictureBox7.TabStop = false;
+            this.pictureBox7.Click += new System.EventHandler(this.pictureBox7_Click);
             // 
             // pictureBox2
             // 
@@ -179,8 +180,10 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(1348, 721);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmSongSets";
             this.Text = "点歌";
+            this.Load += new System.EventHandler(this.FrmSongSets_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
