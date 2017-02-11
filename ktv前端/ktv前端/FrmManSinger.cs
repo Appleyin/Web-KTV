@@ -115,10 +115,10 @@ namespace ktv前端
         /// <param name="e"></param>
         private void DataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            song.SongName = DataGridView1.SelectedRows[0].Cells["song_name"].Value.ToString();
-            song.SongUrl1= DataGridView1.SelectedRows[0].Cells["song_url"].Value.ToString();
+            song.SongName = DataGridView1.SelectedRows[0].Cells["Name"].Value.ToString();
+            //song.SongUrl1= DataGridView1.SelectedRows[0].Cells["song_url"].Value.ToString();
             PlayList.AddSong(song);
-            string sql = string.Format("update dbo.song_info set song_play_count=song_play_count+1 where  song_name='{0}'",DataGridView1.SelectedRows[0].Cells["song_name"].Value.ToString());
+            string sql = string.Format("update dbo.song_info set song_play_count=song_play_count+1 where  song_name='{0}'",DataGridView1.SelectedRows[0].Cells["Name"].Value.ToString());
             SqlCommand cmd = new SqlCommand(sql,DBHelper.Connection);
             try
             {
@@ -137,6 +137,14 @@ namespace ktv前端
             }
 
 
+        }
+
+     
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            FrmYiDian frm = new FrmYiDian();
+            frm.Show();
         }
     }
 }

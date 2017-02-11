@@ -16,7 +16,7 @@ namespace ktv前端
         {
             InitializeComponent();
         }
-        public static string playState;
+        public static string playState=null;
         /// <summary>
         /// 已点歌曲
         /// </summary>
@@ -31,17 +31,28 @@ namespace ktv前端
         /// </summary>
         private void fag()
         {
-            lv.Items.Clear();
-            while (PlayList.SongList[PlayList.SongIndex] != null) ;
+            
+            for (int i = 0; i <PlayList.SongList.Length; i++)
             {
-                 ListViewItem item = new ListViewItem(PlayList.SongList[PlayList.SongIndex].SongName);
-                SongState frm = new SongState();
-                frm.SongPlayed();
-                playState = PlayList.SongList[PlayList.SongIndex].Playstar == ktv前端.SongState.SongPlayState.unplayer ? "未播放" : "正播放";
-                item.SubItems.Add(playState);
-                lv.Items.Add(item);
-                PlayList.SongIndex++;
+                if (PlayList.SongList[i]!=null)
+                {
+                    SongState frm = new SongState();
+                    frm.SongPlayed();
+                    playState = PlayList.SongList[i].Playstar == ktv前端.SongState.SongPlayState.unplayer ? "未播放" : "正播放";
+                    DataTable dt = new DataTable();
+                    dt.Columns.Add("歌曲");
+                    dt.Columns.Add("状态");
+                    DataGridView1.DataSource = dt;
+                    DataRow dr = dt.NewRow();
+                    dr[0] = PlayList.SongList[i].SongName;
+                    dr[1] = playState;
+                    dt.Rows.Add(dr);
+                }
+
+              
+
             }
-            }
+           
+        }
     }
 }

@@ -28,32 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lv = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.DataGridView1 = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // lv
+            // DataGridView1
             // 
-            this.lv.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2});
-            this.lv.Location = new System.Drawing.Point(12, 118);
-            this.lv.Name = "lv";
-            this.lv.Size = new System.Drawing.Size(979, 472);
-            this.lv.TabIndex = 0;
-            this.lv.UseCompatibleStateImageBehavior = false;
-            this.lv.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "歌曲";
-            this.columnHeader1.Width = 323;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "状态";
-            this.columnHeader2.Width = 206;
+            this.DataGridView1.AllowUserToAddRows = false;
+            this.DataGridView1.AllowUserToDeleteRows = false;
+            this.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DataGridView1.Location = new System.Drawing.Point(130, 168);
+            this.DataGridView1.Name = "DataGridView1";
+            this.DataGridView1.ReadOnly = true;
+            this.DataGridView1.RowTemplate.Height = 27;
+            this.DataGridView1.Size = new System.Drawing.Size(623, 345);
+            this.DataGridView1.TabIndex = 0;
             // 
             // FrmYiDian
             // 
@@ -61,20 +51,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ktv前端.Properties.Resources.timg2;
             this.ClientSize = new System.Drawing.Size(994, 602);
-            this.Controls.Add(this.lv);
+            this.Controls.Add(this.DataGridView1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmYiDian";
             this.Text = "FrmYiDian";
             this.Load += new System.EventHandler(this.FrmYiDian_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.DataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListView lv;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.DataGridView DataGridView1;
     }
 }

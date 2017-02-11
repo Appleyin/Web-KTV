@@ -16,7 +16,7 @@ namespace ktv前端
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmYiDian());
+            Application.Run(new FrmManSinger());
         }
     }
 }
